@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.box {
+  border-radius: 5px;
+  background-image: url("back.png");
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    table,th,td{
+      border: 1px solid black;
+      text-align: center;
+      background-image:url(1.avif);
+      height: 100px;
+      
+    }
+p{
+  text-align: center;
+  font-size: large;
+}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+</head>
+<body>
+  <h3>
+    Feedback form
+  </h3>
+  <div class="box">
+    <form action="receive.php">
+      <label for="fname">First name</label>
+      <br><input type="text" id="fname" name="firstname" placeholder="Your name....">
+      <label for="lname">Last name</label>
+      <br><input type="text" id="lname" name="lastname" placeholder="Your last name....">
+      <label for="City">City</label><select id="City" name="City">
+      <br><option value="Kathmandu">Kathmandu</option>
+      <option value="Pokhara">Pokhara</option>
+      <option value="Chitwan">Chitwan</option></select>
+      <br><label for="Feedback">Feedback</label>
+      <textarea id="Feedback" name="Feedback" placeholder="Your feedback..." style="height: 150px;">
+      </textarea>
+      <input type="Submit" value="Submit">
+    </form>  
+    <br><table style="width: 100%">
+      <tr>
+        <th>Google map</th>
+        <th>Social Media links</th>
+        <th>Operating hours</th>
+      </tr>
+        <td>
+          <a href="https://maps.app.goo.gl/qS3TujaUWTVBxTbN7">Google Map</a>
+        </td>
+        <td>
+          <a href="not.html">Instagram</a>
+          <br><a href="not.html">Facebook</a>
+        </td>
+        <td>Monday - Friday : 9am to 6pm<br> Saturday : 10am to 4pm<br> Sunday : Closed</td>
+      </tr>
+      </tr>
+    
+    </table>
+    <p>Created and designed by:</p>
+    <p><a href="https://www.facebook.com/manish.basnet.3939">Manish Basnet</a></p>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<style>
+  h1{
+text-align: center;
+text-decoration: underline;
+  }
+  h2{
+    text-decoration: underline;
+  }
+  div.gallery {
+  margin: 8px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 400px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 270px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+p{
+  text-align: center;
+  font-size: large;
+}
+</style>
+  <title>Table booking</title>
+</head>
+<body>
+  <H1><i>Book your table according to your need by filling the table below.</i></H1>
+  <div class="gallery">
+    <a target="_blank" href="2 top.webp">
+      <img src="2 top.webp" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">2 top table.</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="4 top.jpeg">
+      <img src="4 top.jpeg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">4 top table.</div>
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="6 top.jpeg">
+      <img src="6 top.jpeg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Family table with flexible seats.</div>
+  </div>
+  <br><br>
+  <div class="row">
+  <div class="form">
+    <form action="receive.php">
+      <label for="fname">Name of reserver</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="Contact">Your Mobile number</label>
+      <input type="text" id="contact" name="contact" placeholder="98********">
+
+      <label for="Email">Your email address</label>
+      <input type="text" id="email" name="email" placeholder="example@gmail.com">
+  
+      <label for="time">Time of arrival</label>
+      <input type="text" id="time" name="time" placeholder="Like for 2 to 3 am.">
+  
+      <label for="Seat">Types of table top</label>
+      <select id="top" name="Table top">
+        <option value="two top">Two  Top (2 seats)</option>
+        <option value="4 top">Four  Top (4 seats)</option>
+        <option value="family top">Family Top (flexible seats)</option>
+      </select>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+<br><h2>Note:Your personal detail will be private and we only take those info for contacting you to provide information about your booking and If you want to cancel your booking you should infrom the faculty member within 4 hours or else you have to pay charge..</h2>
+<p>Created and designed by:</p>
+<p><a href="https://www.facebook.com/manish.basnet.3939">Manish Basnet</a></p>
+</html>

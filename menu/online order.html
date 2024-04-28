@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        background-image: url(1.avif);
+      }
+       table ,th{
+      font-size: x-large;
+      text-decoration: underline;
+    }
+    table,td{
+      font-size: larger;
+      text-decoration-line: none;
+    }
+    .menu-item {
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      width: calc(33.33% - 20px);
+    }
+    .order-form {
+      margin-top: 20px;
+    }
+    
+    .order-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .order-form input[type="radio"],
+    .order-form select {
+      margin-bottom: 10px;
+    }
+    
+    .order-form textarea {
+      width: 200%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    
+    .order-form button {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    p{
+      text-align: center;
+      font-size: large;
+    }
+    </style>
+  </head>
+  <body>
+    <h2>Menu list</h2>
+  <table style="width: 100%;">
+  <tr>
+    <th>Momo lists</th>
+    <th>Burger lists</th>
+    <th>Pizza lists</th>
+  </tr>
+  <tr>
+    <td>1) Steam Veg momo</td>
+    <td>9) Chicken Burger</td>
+    <td>15) Pepperoni Pizza</td>
+    </tr>
+    <tr>
+    <td>2) Steam Chicken momo</td>
+    <td>10) Veggie Burger</td>
+    <td>16) Cheese Pizza</td>
+    </tr>
+    <tr>
+    <td>3) Steam Buff momo</td>
+    <td>11) Buff Burger</td>
+    <td>17) Chicken Pizza</td>
+    </tr>
+    <tr>
+    <td>4) Chilli Veg momo</td>
+    <td>12) Bean Burger</td>
+    <td>18) Mushroom Pizza</td>
+    </tr>
+    <tr>
+    <td>5) Chilli Chicken momo</td>
+    <td>13) Cheese  Burger</td>
+    <td>19) Margherita Pizza</td>
+    </tr>
+    <tr>
+    <td>6) Fry Buff momo</td>
+    <td>14) Buff Burger</td>
+    <td>20) Buff Pizza</td>
+    </tr>
+    <tr>
+    <td>7) Fry  Chicken momo</td>
+    <td></td>
+    <td>21) Italian Pizza</td>
+    <tr>
+    <td>8) Fry Veg momo</td>
+    <td></td>
+    <td></td>
+    </tr>
+  </tr>
+  <tr>
+    <th>Desert lists</th>
+    <th>Soft drinks</th>
+    <th>Hard drinks</th>
+  </tr>
+  <tr>
+    <td>22) Banoffee Pie</td>
+    <td>27) Sprite</td>
+    <td>32) Vodka</td>
+    </tr>
+    <tr>
+    <td>23) Cheese cake</td>
+    <td>28) Coke</td>
+    <td>33) Rum</td>
+    </tr>
+    <tr>
+    <td>24) Pudding</td>
+    <td>29) Dew</td>
+    <td>34) Whiskey</td>
+    </tr>
+    <tr>
+    <td>25) Pancake</td>
+    <td>30) Fanta</td>
+    <td>35) Brandt</td>
+    </tr>
+    <tr>
+    <td>26) Ice-cream</td>
+    <td>31) Lemonade</td>
+    <td>36) Beer</td>
+    </tr>
+  </tr>
+  </table>
+  <label for="instructions"><b>Write your order;</b></label>
+        <textarea id="instructions" name="instructions" rows="4"  placeholder="List the items number for your order."></textarea>
+      
+       <br><form class="order-form">
+        <label for="delivery"><b>Delivery:</b></label>
+        <input type="radio" id="delivery" name="delivery-option" value="delivery">
+        <label for="pickup"><b>Pickup:</b></label>
+        <input type="radio" id="pickup" name="delivery-option" value="pickup">
+        
+        <label for="payment"><b>Payment Method:</b></label>
+        <select id="payment" name="payment-method">
+          <option value="credit">Credit Card</option>
+          <option value="debit">Debit Card</option>
+          <option value="cash">Cash on Delivery</option>
+        </select>
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+    <p>Created and designed by:</p>
+    <p><a href="https://www.facebook.com/manish.basnet.3939">Manish Basnet</a></p>
+  </body>
+</html>
